@@ -2,8 +2,8 @@
   "version": 2,
   "routes": [
     {
-      "src": "/match/(?<match>[^/]+)/(?<city>[^/]+)/(?<stadium>[^/]+)",
-      "dest": "/api/index.js?match=$match&city=$city&stadium=$stadium"
+      "src": "/match/(.*)/(.*)/(.*)",
+      "dest": "/api/index.js?match=$1&city=$2&stadium=$3"
     }
   ]
 }
